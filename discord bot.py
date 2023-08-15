@@ -50,7 +50,7 @@ async def tracker(inter, delay : int, gamemode : str, ign : str):
          value2a = 0
 
          delay = int(delay)
-         apikey = "355baede-8374-433e-8d6d-a26a55b23bb3"
+         apikey = "hypixel-api-key"
 
          resp = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{ign}")
          uuidplayer = resp.json()["id"]
@@ -180,7 +180,7 @@ async def tracker(inter, delay : int, gamemode : str, ign : str):
 @bot.slash_command(name="wins")
 async def wins(inter, gamemode : str, ign : str):
             await inter.response.defer(ephemeral=True, with_message=False)
-            apikey = "355baede-8374-433e-8d6d-a26a55b23bb3"
+            apikey = "hypixel-api-key"
 
             resp = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{ign}")
             uuidplayer = resp.json()["id"]
@@ -236,4 +236,4 @@ async def help(inter):
         await inter.channel.send(embed=embed)
 
             
-bot.run('MTEzOTYzMDI5NTQ3NDI1ODA0MQ.GzNqVg.TZYOTwflNWCp9l-RQB5qbyHWTAuAOI4JVQSxSY')
+bot.run('discord-bot-token')

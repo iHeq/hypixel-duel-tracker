@@ -12,3 +12,5 @@ nr2 add your discord bot token in the code
 nr3 start the file
 
 nr4 go to your discord server and do /tracker [delay] [gamemode] [username]
+
+(dont try to use the token or api key in the file, both don't work lol)

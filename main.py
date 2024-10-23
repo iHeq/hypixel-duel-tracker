@@ -19,7 +19,7 @@ bot = commands.Bot(command_prefix = '!',
                    strip_after_prefix = True,
                    )
 
-chan=bot.get_channel(1139507742042763274)
+chan=bot.get_channel("CHANNELID")
 
 
 @bot.event
@@ -80,7 +80,7 @@ CWHITEBG2  = '\33[107m'
 @bot.slash_command(name="tracker") 
 async def tracker(inter, delay : int, gamemode : str, ign : str):
          await inter.response.send_message("⠀")
-         chan=bot.get_channel(1139507742042763274)
+         chan=bot.get_channel("CHANNELID")
          os.system('cls')
 
          print("\n████████╗██████╗░░█████╗░░█████╗░██╗░░██╗███████╗██████╗░")
@@ -100,7 +100,7 @@ async def tracker(inter, delay : int, gamemode : str, ign : str):
          value2a = 0
 
          delay = int(delay)
-         apikey = "37ad2b13-65f3-4b76-9c41-6f6f1d83dfce"
+         apikey = "APIEKY"
          gamemodebig = gamemode.capitalize()
 
          try:
@@ -283,7 +283,7 @@ async def tracker(inter, delay : int, gamemode : str, ign : str):
 @bot.slash_command(name="modewins")
 async def wins(inter, gamemode : str, ign : str):
             await inter.response.send_message("⠀")
-            apikey = "37ad2b13-65f3-4b76-9c41-6f6f1d83dfce"
+            apikey = "APIKEY"
 
             try:
                 resp = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{ign}")
@@ -362,7 +362,7 @@ async def wins(inter, gamemode : str, ign : str):
 @bot.slash_command(name="wins")
 async def wins(inter, ign : str):
             await inter.response.send_message("⠀")
-            apikey = "37ad2b13-65f3-4b76-9c41-6f6f1d83dfce"
+            apikey = "APIKEY"
 
             try:
                 resp = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{ign}")
@@ -440,7 +440,7 @@ async def wins(inter, ign : str):
 @bot.slash_command(name="status")
 async def wins(inter, ign : str):
             await inter.response.send_message("⠀")
-            apikey = "b3909a29-acb5-4910-a753-f3b18ad7bb41"
+            apikey = "APIKEY"
 
             try:
                 resp = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{ign}")
@@ -515,7 +515,7 @@ async def wins(inter, delay : int):
             bans2 = 0
             bans1_calc = 0
             bans2_calc = 0
-            apikey = "37ad2b13-65f3-4b76-9c41-6f6f1d83dfce"
+            apikey = "APIKEY"
 
             while loop == 1:
             
@@ -589,7 +589,7 @@ async def wins(inter, delay : int):
 @bot.slash_command(name="session")
 async def wins(inter, ign : str, delay : int):
             await inter.response.send_message("⠀")
-            apikey = "37ad2b13-65f3-4b76-9c41-6f6f1d83dfce"
+            apikey = "APIKEY"
 
             try:
                 resp = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{ign}")
@@ -719,4 +719,4 @@ async def help(inter):
 
         print("\n" + CGREENBG2 + "Sent an Embed! (DEV)" + CEND)
 
-bot.run('MTEzOTYzMDI5NTQ3NDI1ODA0MQ.GOeLSD.4gzvD6DnFbIzaS5qHWcmUNqxgctHI8sxlgkjR4')
+bot.run('BOTKEY')
